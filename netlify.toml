@@ -1,7 +1,7 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "gatsby build"
 
 [context.production.environment]
-HUGO_VERSION = "0.57.2"
-HUGO_ENV = "production"
+NODE_VERSION = "12.11.1"
+NODE_ENV = "production"

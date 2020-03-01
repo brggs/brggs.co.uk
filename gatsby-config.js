@@ -58,5 +58,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-heap',
+      options: {
+        appId: '422696634',
+        enableOnDevMode: false 
+      },
+    },
   ],
 }

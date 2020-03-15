@@ -4,7 +4,7 @@ date: "2020-03-15"
 description: "Running a CoderDojo online"
 ---
 
-Today we hosted the first virtual session of the [Bishops Cleeve CoderDojo](https://bc-coderdojo.netlify.com/).  While we didn't strictly need to, it seemed like a sensible option and also we were curious to see how well it would work.
+Today we hosted the first virtual session of the [Bishops Cleeve CoderDojo](https://bc-coderdojo.netlify.com/).  While we didn't strictly need to, it seemed like a sensible option given the current coronavirus situation, and also we were curious to see how well it would work.
 
 We had 5 children (who I'll call ninjas from now on!) join us, all of whom had attended before, as well as 3 mentors.  We split the session into two parts, beginning with a live stream building one of the projects from the learning paths (which we introduced last session) before finishing with the usual show & tell.  
 
@@ -20,7 +20,7 @@ We instead started the session with a live stream of one of the mentors building
 
 We did finish with the usual show & tell, which worked fine over the video conferencing.
 
-Lessons
+Lessons:
 * Look for an online icebreaker
 * Make sure the live stream isn't too long (or perhaps run these in a separate dedicated session)
 * Make sure ninjas know they can get on with their own projects if they'd prefer not to watch the stream
@@ -37,14 +37,14 @@ Lessons:
 * Make sure we've got the link right (look for a way to allow people to join with voice/webcam off, but allow them to turn these on later)
 * Find out how to share audio
 
-## Chat
+## Text Chat
 
 We also used [Discord](https://discordapp.com/) for text chat.  We had a general channel which the ninjas used to ask questions, and a private one for the mentors to discuss logistics.
 
-This worked well, but it would have been useful to have two channels to keep the livestream chat separate from the people asking for advice on their own projects.
+This worked well, but it would have been useful to have two public channels to keep the livestream chat separate from the people asking for advice on their own projects.
 
 Lessons:
-* Split the chat into 2 channels if doing a live stream at the same time 
+* Split the chat into 2 public channels if doing a live stream at the same time 
 
 ## Joining instructions
 

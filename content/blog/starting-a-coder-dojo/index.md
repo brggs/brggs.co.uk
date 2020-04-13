@@ -2,6 +2,7 @@
 title: Starting a CoderDojo in the UK
 date: "2020-01-04"
 description: "A guide to starting a new CoderDojo coding club for children in the UK."
+tags: ["CoderDojo"]
 ---
 
 CoderDojo is an international organisation providing free coding clubs for children ages 7-17.  I recently co-founded a [new club](https://bc-coderdojo.netlify.com/) in my local village and wanted to share the process we followed to get up and running. It's a great thing to do to help get more kids into coding and encourage them in to STEM careers.

@@ -36,9 +36,9 @@ const Footer = styled.div`
   font-size: 0.8rem;
 `
 
-export default ({ title, children }) => (
+export default ({ title, description, children }) => (
   <OuterContainer>
-    <SEO title={title} />
+    <SEO title={title} description={description} />
     <GlobalStyle />
     <Header>
       <HeaderContent>

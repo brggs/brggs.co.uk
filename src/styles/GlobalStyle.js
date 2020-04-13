@@ -40,7 +40,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2 {
-    color: #e9eef2;
     font-family: 'Lato';
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -54,6 +53,11 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-size: 30px;
     color: ${midBlue};
+  }
+
+  h3 {
+    font-family: 'Lato';
+    color: ${lighterBlue};
   }
   
   blockquote {
@@ -72,19 +76,52 @@ const GlobalStyle = createGlobalStyle`
     border-left: 0.33rem solid
   }
 
-.gatsby-highlight {
-  font-size: 14px;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
-}
+  table {
+    margin: 0 auto;
+  }
 
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding: 0;
-  padding-left: 2.8em;
-  overflow: initial;
-}
+  th {
+    padding: 5px;
+    font-family: 'Lato';
+    color: ${lighterBlue};
+  }
+  
+  td {
+    padding: 5px;
+    min-width: 60px;
+  }
+
+  code[class*="language-"] {
+    font-size: 14px;
+  }
+
+  .gatsby-highlight {
+    padding: 1em;
+  }
+
+  .gatsby-highlight pre[class*="language-"] {
+    max-width: none;
+    padding: 1.5em;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .gatsby-highlight pre[class*=language-] code {
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
 `
 
 export default GlobalStyle

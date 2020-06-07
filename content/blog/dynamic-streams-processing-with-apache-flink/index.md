@@ -9,12 +9,13 @@ This is part 1 in a series on building a dynamic, rules-based streams processing
 
 1) Introduction
 2) [Rules Based Stream Processing with Apache Flink's Broadcast Pattern](/broadcast-state-pattern-rules-based-flink)
+3) [Automated Testing of the Broadcast State Pattern](/testing-flink-broadcast-state)
 
 ## What & Why
 
 Over the next few blog posts, I'm going to run through the process of building an application which processes a continuous stream of data, comparing it against a set of rules.  If any of the rules match, an alert is created to let us know.  These rules will be dynamic, so it will be possible to update them without interrupting the operation of the system.  We will be building the application using the open source Apache Flink framework, so it will be scalable to millions of events per second.
 
-This is based on an application I designed and implemented for a company which is sadly no longer around.  I hope instead the knowledge I gained from the process will be of use to anyone else looking to build something similar.
+This is based on an application I designed and built (alongside [Jack](https://jtuck.io/)) for a company which is sadly no longer around.  I hope instead the knowledge I gained from the process will be of use to anyone else looking to build something similar.
 
 While the system was originally designed as a network security monitoring system.  The concepts are very generic however, and the application would work well for any situation where you want to analyse a large amount of data in real time and get output when certain conditions occur.
 

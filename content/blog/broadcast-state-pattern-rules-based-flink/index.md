@@ -9,6 +9,7 @@ This is part 2 in a series on building a dynamic, rules based streams processing
 
 1) [Introduction](/dynamic-streams-processing-with-apache-flink/)
 2) Rules Based Stream Processing with Apache Flink's Broadcast Pattern
+3) [Automated Testing of the Broadcast State Pattern](/testing-flink-broadcast-state)
 
 ## Background
 

@@ -7,9 +7,9 @@ tags: ["Apache Flink", "Dynamic Flink"]
 
 This is part 1 in a series on building a dynamic, rules-based streams processing application with [Apache Flink](https://flink.apache.org/).
 
-1) Introduction
-2) [Rules Based Stream Processing with Apache Flink's Broadcast Pattern](/broadcast-state-pattern-rules-based-flink)
-3) [Automated Testing of the Broadcast State Pattern](/testing-flink-broadcast-state)
+1. Introduction
+2. [Rules Based Stream Processing with Apache Flink's Broadcast Pattern](/blog/broadcast-state-pattern-rules-based-flink)
+3. [Automated Testing of the Broadcast State Pattern](/blog/testing-flink-broadcast-state)
 
 ## What & Why
 
@@ -41,7 +41,7 @@ If you've never come across Flink before, it's worth brushing up on the basics b
 
 ## Architecture
 
-![alt text](Dynamic Flink Diagram.png)
+![A diagram showing events flowing into a system, being acted by a rules based controller.](dynamic-flink-diagram.png)
 
 We will be writing a Flink Job, which will read events in JSON format from a Kafka topic.  If any of the events match, an alert will be sent to another kafka topic.
 
@@ -75,6 +75,6 @@ All of the source code discussed in this series is available [on github](https:/
 
 ## Part 2
 
-In [part 2](/broadcast-state-pattern-rules-based-flink/), we look at a simple implementation of the rules engine, allowing us to dynamically apply simple matching rules.
+In [part 2](/blog/broadcast-state-pattern-rules-based-flink/), we look at a simple implementation of the rules engine, allowing us to dynamically apply simple matching rules.
 
 If you find these posts, or the project useful please let me know!

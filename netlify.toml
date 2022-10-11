@@ -1,7 +1,0 @@
-[build]
-publish = "public"
-command = "gatsby build"
-
-[context.production.environment]
-NODE_VERSION = "12.11.1"
-NODE_ENV = "production"

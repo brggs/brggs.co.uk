@@ -7,9 +7,9 @@ tags: ["Apache Flink", "Dynamic Flink", "Testing"]
 
 This is part 3 in a series on building a dynamic, rules based streams processing application with [Apache Flink](https://flink.apache.org/).
 
-1) [Introduction](/dynamic-streams-processing-with-apache-flink/)
-2) [Rules Based Stream Processing with Apache Flink's Broadcast Pattern](/broadcast-state-pattern-rules-based-flink)
-3) Automated Testing of the Broadcast State Pattern
+1. [Introduction](/blog/dynamic-streams-processing-with-apache-flink/)
+2. [Rules Based Stream Processing with Apache Flink's Broadcast Pattern](/blog/broadcast-state-pattern-rules-based-flink)
+3. Automated Testing of the Broadcast State Pattern
 
 ## Overview
 
@@ -270,9 +270,3 @@ In this post we looked at how to write automated tests for a Flink application w
 This is a great starting place for building up a full suite of integration tests, exercising the full logic of the application.
 
 For a production system, of course you'd want to go further than this and create a reference environment to allow end to end testing of the full system, including Kafka.  This would also allow for performance testing and/or verification of the system's security model.
-
-We'll leave testing, and our simplified version of the system behind now though, and move on to looking at the more advanced functionality of the full system.
-
-## Next steps
-
-In [part 4](), we move on to looking at parts of the full version of the system.  First up is allowing custom window sizes to be specified as part of the rules.

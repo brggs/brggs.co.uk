@@ -1,0 +1,64 @@
+@tailwind base;
+
+body {
+  @apply bg-slate-800
+}
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+  @apply font-bold;
+  @apply text-zinc-600;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-sky-400;
+}
+p {
+  @apply font-serif;
+}
+
+p code[class*="language-"] {
+  @apply text-sm;
+}
+
+.gatsby-highlight code[class*="language-"] {
+  @apply text-sm;
+}
+
+
+.gatsby-highlight {
+  padding: 1em;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  max-width: none;
+  padding: 1.5em;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.gatsby-highlight pre[class*=language-] code {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+
+
+@tailwind components;
+@tailwind utilities;

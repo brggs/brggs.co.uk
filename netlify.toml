@@ -6,6 +6,7 @@ command = "gatsby build"
   from = "/broadcast-state-pattern-rules-based-flink"
   to = "/blog/broadcast-state-pattern-rules-based-flink"
   status = 301
+  force=true
 
 [[redirects]]
   from = "/dynamic-streams-processing-with-apache-flink/"

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FaLinkedinIn, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
-import SEO from '../components/Seo'
+import SEO from '../components/seo'
 
 const IndexPage = () => (
   <div className="bg-slate-800 min-h-screen">

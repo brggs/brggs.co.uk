@@ -1,3 +1,18 @@
 [build]
 publish = "public"
 command = "gatsby build"
+
+[[redirects]]
+  from = "/broadcast-state-pattern-rules-based-flink/"
+  to = "/blog/broadcast-state-pattern-rules-based-flink/"
+  status = 301
+
+[[redirects]]
+  from = "/dynamic-streams-processing-with-apache-flink/"
+  to = "/blog/dynamic-streams-processing-with-apache-flink/"
+  status = 301
+
+[[redirects]]
+  from = "/testing-flink-broadcast-state/"
+  to = "/blog/testing-flink-broadcast-state/"
+  status = 301

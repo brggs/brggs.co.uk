@@ -1,5 +1,0 @@
-# https://docs.netlify.com/routing/redirects/
-
-/broadcast-state-pattern-rules-based-flink/   /blog/broadcast-state-pattern-rules-based-flink/
-/dynamic-streams-processing-with-apache-flink/  /blog/dynamic-streams-processing-with-apache-flink/
-/testing-flink-broadcast-state/    /blog/testing-flink-broadcast-state/

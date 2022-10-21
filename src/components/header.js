@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 function Header({ siteTitle }) {
   return (
@@ -12,31 +12,27 @@ function Header({ siteTitle }) {
         >
           {siteTitle}
         </Link>
-        <div className={`flex-grow flex items-center justify-end text-lg gap-4`}>
-          <Link
-            to={`/blog`}
-            className="text-sky-500"
-          >
+        <div
+          className={`flex-grow flex items-center justify-end text-lg gap-4`}
+        >
+          <Link to={`/blog`} className="text-sky-500">
             Blog
           </Link>
-          <Link
-            to={`/#about`}
-            className=" text-sky-500"
-          >
+          <Link to={`/#about`} className=" text-sky-500">
             About
           </Link>
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
   siteTitle: ``,
-};
+}
 
-export default Header;
+export default Header

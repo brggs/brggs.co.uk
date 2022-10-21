@@ -1,9 +1,9 @@
-import * as React from "react";
-import { graphql, Link } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import * as React from 'react'
+import { graphql, Link } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import Layout from "../../components/layout";
-import ComponentsWrapper from "../../components/ComponentsWrapper";
+import Layout from '../../components/layout'
+import ComponentsWrapper from '../../components/ComponentsWrapper'
 
 const BlogPost = ({ data }) => {
   return (
@@ -28,13 +28,13 @@ const BlogPost = ({ data }) => {
       <hr className="pb-4" />
       <p className="text-slate-300 pb-2">- Andrew Briggs</p>
       <p className="text-slate-300">
-        {" "}
-        Find out more <Link to={"/"}>about me</Link>, or{" "}
-        <Link to={"/blog"}>return to the blog index</Link>.
+        {' '}
+        Find out more <Link to={'/'}>about me</Link>, or{' '}
+        <Link to={'/blog'}>return to the blog index</Link>.
       </p>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query ($id: String) {
@@ -47,6 +47,6 @@ export const query = graphql`
       timeToRead
     }
   }
-`;
+`
 
-export default BlogPost;
+export default BlogPost

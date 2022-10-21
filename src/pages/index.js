@@ -2,20 +2,20 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FaLinkedinIn, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const IndexPage = () => (
   <div className="bg-slate-800 min-h-screen">
-    <SEO title="Home" />
+    <Seo title="Home" />
 
-    <div className="flex flex-col min-h-screen text-slate-200 max-w-2xl mx-auto">
+    <div className="flex flex-col min-h-screen text-slate-200 max-w-lg md:max-w-xl mx-auto">
       <div className="grow flex flex-col justify-center text-center space-y-6 p-4 text-xl md:text-2xl">
         <h1 className="text-3xl md:text-4xl">
           Hi, I'm <span className="text-sky-400">Andrew Briggs</span> 👋
         </h1>
-        <p className='font-sans'>
+        <p className="font-sans">
           I'm a Software Engineer based in the UK, working as an independent
-          contractor via
+          consultant via my company
           <a
             href="https://bluefinch.uk/"
             target="_blank"
@@ -27,7 +27,7 @@ const IndexPage = () => (
           </a>
           .
         </p>
-        <p className='font-sans'>
+        <p className="font-sans">
           I also run the{' '}
           <a
             href="https://bc-coderdojo.netlify.app/"
@@ -39,14 +39,14 @@ const IndexPage = () => (
           </a>
           , our local coding club.
         </p>
-        <p className='font-sans'>
+        <p className="font-sans">
           I occasionally{' '}
           <Link to={`/blog`} className="text-fuchsia-500">
             blog
           </Link>{' '}
-          about software engineering.
+          about software engineering & STEM outreach.
         </p>
-        <p className='font-sans'>
+        <p className="font-sans">
           In my free time, I like to walk in the Cotswolds{' '}
           <a
             href="https://www.instagram.com/distant.summit/"

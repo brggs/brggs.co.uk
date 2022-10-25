@@ -7,7 +7,7 @@ import ComponentsWrapper from '../../components/ComponentsWrapper'
 
 const BlogPost = ({ data }) => {
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout pageTitle={data.mdx.frontmatter.title} description={data.mdx.frontmatter.description}>
       <div className="md:max-w-prose mx-auto">
         <h1 className="pt-10 pb-2 font-bold text-3xl md:text-4xl text-sky-300">
           {data.mdx.frontmatter.title}
@@ -41,6 +41,7 @@ export const query = graphql`
     mdx(id: { eq: $id }) {
       frontmatter {
         title
+        description
         date(formatString: "Do MMMM YYYY")
       }
       body

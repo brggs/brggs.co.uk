@@ -156,20 +156,20 @@ The test results will be exposed via the `EventSink`, which will keep a list of 
 We'll come back to what this looks like in a test case later, but now let's run through what happens when we call that `run()` method.
 
 Firstly it tidies things up and gets ready for a test run:
-1) Clears any output from previous tests
-2) Sets up a `StringWriter` to capture the log output
-3) Configures the execution environment
-4) Creates two instances of `ControllableSourceFunction`, one for events and one for rules (`ControlInput`)
+1. Clears any output from previous tests
+2. Sets up a `StringWriter` to capture the log output
+3. Configures the execution environment
+4. Creates two instances of `ControllableSourceFunction`, one for events and one for rules (`ControlInput`)
 
 Next we build and submit the job, by calling `DynamicFlink.build()`, then getting the resulting job graph and passing this into the mini cluster.
 
 This step is why we created the `DynamicFlink` class in the previous post.  If we had put the job logic in the main method of the program, it wouldn't be possible to test the job in this way without duplicating the job code.
 
 Now that the job is running, the next steps are:
-1) Start the control source, to send the rules into the system 
-2) Wait for all rules to be acknowledged
-3) Start the event source
-4) Wait for the job to complete
+1. Start the control source, to send the rules into the system 
+2. Wait for all rules to be acknowledged
+3. Start the event source
+4. Wait for the job to complete
 
 After completion, we run a few verification steps.  Our tests will fail if any of the following occurred during the run:
 * A rule failed to be added (indicated by a failure code in the acknowledgement)

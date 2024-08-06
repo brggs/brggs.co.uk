@@ -1,36 +1,40 @@
-import React from 'react'
+  import React from 'react'
 import { Link } from 'gatsby'
-import { FaLinkedinIn, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { FaInstagram, FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 import Seo from '../components/seo'
 
 const IndexPage = () => (
-  <div className="bg-slate-800 min-h-screen">
+  <div className="bg-slate-900 min-h-screen">
     <Seo title="Home" />
 
     <div className="flex flex-col min-h-screen text-slate-200 max-w-lg md:max-w-xl mx-auto">
       <div className="grow flex flex-col justify-center text-center space-y-6 p-4 text-xl md:text-2xl">
         <h1 className="text-3xl md:text-4xl">
-          Hi, I'm <span className="text-sky-400">Andrew Briggs</span> 👋
+          Hi, I'm <span className="text-sky-400">Andy Briggs</span> 👋
         </h1>
         <p className="font-sans">
-          I'm a Software Engineer based in the UK, working as an independent
-          consultant via my company
+          I'm a Software Engineer based in the UK.
+        </p>
+        <p className="font-sans">
+          I write a{' '}
           <a
-            href="https://bluefinch.uk/"
+            href="https://curiouscoders.substack.com/"
             target="_blank"
             rel="noreferrer"
-            className="text-sky-600"
+            className="text-orange-500"
           >
-            {' '}
-            BlueFinch Technologies
+            newsletter
           </a>
-          .
+          {' '}about teaching kids to code, which you can also read here on my{' '}
+          <Link to={`/blog`} className="text-fuchsia-500">
+            blog
+          </Link>
         </p>
         <p className="font-sans">
           I also run the{' '}
           <a
-            href="https://bc-coderdojo.netlify.app/"
+            href="https://bccd.uk/"
             target="_blank"
             rel="noreferrer"
             className="text-violet-600"
@@ -39,26 +43,17 @@ const IndexPage = () => (
           </a>
           , our local coding club.
         </p>
-        <p className="font-sans">
-          I occasionally{' '}
-          <Link to={`/blog`} className="text-fuchsia-500">
-            blog
-          </Link>{' '}
-          about software engineering & STEM outreach.
-        </p>
-        <p className="font-sans">
-          In my free time, I like to walk in the Cotswolds{' '}
+        
+        <div className="flex mx-auto text-4xl pt-4 space-x-4">
           <a
-            href="https://www.instagram.com/distant.summit/"
+            href="https://www.instagram.com/mrabriggs/"
             target="_blank"
             rel="noreferrer"
-            className="text-emerald-600"
+            className="w-16 h-16 rounded-full 
+       bg-orange-500 text-white flex items-center justify-center"
           >
-            taking photos
+            <FaInstagram />
           </a>
-          .
-        </p>
-        <div className="flex mx-auto text-4xl pt-4 space-x-4">
           <a
             href="https://www.linkedin.com/in/brggs/"
             target="_blank"
@@ -69,20 +64,20 @@ const IndexPage = () => (
             <FaLinkedinIn />
           </a>
           <a
-            href="https://twitter.com/MrABriggs"
+            href="https://github.com/brggs"
             target="_blank"
             rel="noreferrer"
             className="w-16 h-16 rounded-full 
-             bg-sky-500 text-white flex items-center justify-center"
+             bg-purple-500 text-white flex items-center justify-center"
           >
-            <FaTwitter />
+            <FaGithub />
           </a>
           <a
             href="mailto:andrew@brggs.co.uk"
             target="_blank"
             rel="noreferrer"
             className="w-16 h-16 rounded-full 
-            bg-violet-600 text-white flex items-center justify-center"
+            bg-green-600 text-white flex items-center justify-center"
           >
             <FaEnvelope />
           </a>

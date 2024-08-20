@@ -73,6 +73,7 @@ function Seo({ description, lang, meta, title }) {
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap"
         rel="stylesheet"
       />
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="00df7c72-e643-4bf6-a566-64cbeff5254d"></script>
     </Helmet>
   )
 }

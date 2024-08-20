@@ -29,7 +29,7 @@ const IndexPage = () => (
           {' '}about teaching kids to code, which you can also read here on my{' '}
           <Link to={`/blog`} className="text-fuchsia-500">
             blog
-          </Link>
+          </Link>.
         </p>
         <p className="font-sans">
           I also run the{' '}

@@ -26,7 +26,7 @@ const BlogPost = ({ data }) => {
         </article>
       </div>
       <hr className="pb-4" />
-      <p className="text-slate-300 pb-2">- Andrew Briggs</p>
+      <p className="text-slate-300 pb-2">- Andy Briggs</p>
       <p className="text-slate-300">
         {' '}
         Find out more <Link to={'/'}>about me</Link>, or{' '}

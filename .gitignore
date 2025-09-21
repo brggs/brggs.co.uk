@@ -1,6 +1,11 @@
+# build output
+dist/
+# generated types
+.astro/
 
-/public
-
+# environment variables
+.env
+.env.production
 
 # Created by https://www.gitignore.io/api/macos,windows,node,react
 # Edit at https://www.gitignore.io/?templates=macos,windows,node,react

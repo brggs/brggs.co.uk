@@ -1,0 +1,59 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+const { pageTitle, description, openGraph } = Astro.props;
+const isProd = import.meta.env.PROD;
+---
+
+<html lang="en" class="bg-slate-950">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    {
+      isProd && (
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="00df7c72-e643-4bf6-a566-64cbeff5254d"
+        />
+      )
+    }
+    <title>{pageTitle} | brggs.co.uk</title>
+    <link rel="canonical" href={Astro.url.href} />
+    {
+      description ? (
+        <meta name="description" content={description} />
+      ) : null
+    }
+    {
+      openGraph ? (
+        <meta property="og:title" content={openGraph.title} />
+        <meta property="og:type" content={openGraph.type} />
+        <!-- <meta property="og:image" content={openGraph.image} /> -->
+        <meta property="og:url" content={openGraph.url || Astro.url.href} />
+      ) : null
+    }
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+
+  <body class="min-h-screen text-slate-200 flex flex-col">
+      <Header />
+      <div class="grow flex flex-col px-4">
+        <slot />
+      </div>
+      <Footer />
+  </body>
+</html>

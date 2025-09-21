@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'Jost', 'sans-serif';
+
+}
+
+@layer base {
+    a {
+        @apply text-sky-400;
+
+    }
+
+    a:hover {
+        @apply text-sky-200;
+    }
+}

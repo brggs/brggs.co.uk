@@ -1,6 +1,5 @@
 [build]
-publish = "public"
-command = "gatsby build"
+publish = "dist"
 
 [[redirects]]
   from = "/broadcast-state-pattern-rules-based-flink/"

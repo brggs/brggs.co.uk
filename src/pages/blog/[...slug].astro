@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { readingTime } from "../../utils/utils";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blogs");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const timeToRead = readingTime(entry.body);
+
+const openGraph = {
+  title: entry.data.title,
+  type: 'website',
+}
+---
+
+<BaseLayout pageTitle={entry.data.title} description={entry.data.description} openGraph={openGraph}>
+  <div class="max-w-prose mx-auto">
+    <h1 class="pt-10 pb-2 font-bold text-3xl md:text-4xl text-emerald-400">
+      {entry.data.title}
+    </h1>
+    <p class="text-sm text-slate-400 font-normal pb-4">
+      {new Date(entry.data.date).toLocaleDateString()} - {timeToRead} min read
+    </p>
+    <article
+      class="prose prose-lg prose-slate !prose-invert prose-h2:text-sky-300
+         prose-h3:text-sky-200 prose-p:leading-relaxed prose-a:text-sky-400 prose-a:hover:text-sky-200 prose-a:no-underline
+          pb-8"
+    >
+      <Content />
+    </article>
+    <hr class="pb-4" />
+    <p class="text-slate-300 pb-2">- Andy Briggs</p>
+    <p class="text-slate-300 pb-4">
+      {' '}
+      Find out more <a href={'/'}>about me</a>, or{' '}
+      <a href={'/blog'}>return to the blog index</a>.
+    </p>
+  </div>
+</BaseLayout>

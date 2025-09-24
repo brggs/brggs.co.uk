@@ -3,7 +3,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: 'Jost', 'sans-serif';
+    --font-sans: 'Jost', 'sans-serif';
 
 }
 
@@ -16,4 +16,48 @@
     a:hover {
         @apply text-sky-200;
     }
+}
+
+article ul {
+    @apply my-1;
+}
+
+article li {
+    @apply my-0;
+}
+
+p code {
+    @apply text-sm;
+}
+
+p code:before {
+    @apply content-none;
+}
+
+p code:after {
+    @apply content-none;
+}
+
+
+.gatsby-highlight {
+    padding: 1em;
+}
+
+pre[class*="astro-code"] {
+    max-width: none;
+    padding: 1.5em;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+pre[class*=astro-code] code {
+    @apply text-sm;
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

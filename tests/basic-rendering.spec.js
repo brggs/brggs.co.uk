@@ -32,8 +32,8 @@ test.describe('Basic page rendering', () => {
     // Test with a known blog post
     await page.goto('/blog/starting-a-coder-dojo');
 
-    // Check page loaded (title might vary, so just check it exists)
-    await expect(page.locator('h1, h2')).toBeVisible();
+    // Check page loaded - verify the h1 title is visible
+    await expect(page.locator('h1').first()).toBeVisible();
 
     // Verify prose content is present (typical Astro/Tailwind blog styling)
     const content = page.locator('article, .prose, main');

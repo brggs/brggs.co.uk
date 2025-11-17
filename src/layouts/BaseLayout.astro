@@ -55,5 +55,34 @@ const isProd = import.meta.env.PROD;
         <slot />
       </div>
       <Footer />
+
+      <!-- Service Worker Cleanup Script -->
+      <script is:inline>
+        // Remove old Gatsby service worker
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for (let registration of registrations) {
+              registration.unregister().then(function(success) {
+                if (success) {
+                  console.log('Service worker unregistered successfully');
+                }
+              });
+            }
+          });
+
+          // Clear all caches
+          if ('caches' in window) {
+            caches.keys().then(function(cacheNames) {
+              cacheNames.forEach(function(cacheName) {
+                caches.delete(cacheName).then(function(success) {
+                  if (success) {
+                    console.log('Cache cleared:', cacheName);
+                  }
+                });
+              });
+            });
+          }
+        }
+      </script>
   </body>
 </html>

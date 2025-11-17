@@ -3,6 +3,11 @@ dist/
 # generated types
 .astro/
 
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
 # environment variables
 .env
 .env.production
